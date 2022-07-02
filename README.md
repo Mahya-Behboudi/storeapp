@@ -1,1 +1,1 @@
-A simple class component 
+A simple class component project => props and state 
