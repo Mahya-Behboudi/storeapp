@@ -35,7 +35,7 @@ class Card extends Component {
                     <span className={styles.span}>{badget}{counter?`*${counter} = ${counter * Number(badget.split(" ")[0])} $`: ""}</span>
                 
                 <div className={styles.counter}>
-                    <img className={!counter && styles.deactive} src={down} alt="down" onClick={this.downHandler}/>
+                    <img className={!counter? styles.deactive : ''} src={down} alt="down" onClick={this.downHandler}/>
                     <span>{counter}</span>
                     <img src={up} alt="up" onClick={this.upHandler}/>
                 </div>
